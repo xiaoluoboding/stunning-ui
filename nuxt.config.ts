@@ -64,7 +64,7 @@ export default defineNuxtConfig({
         // },
         {
           src: 'https://analytics.ahrefs.com/analytics.js',
-          'data-key': '4YJKXMwOAKfUo2943w5q1Q',
+          'data-key': 'fL4UAQrZYAfew0e0mZUeIA',
           defer: true
         }
       ]
