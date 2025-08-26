@@ -1,0 +1,837 @@
+{
+	"meta": {
+		"authors": [
+			"Robert Shaw"
+		],
+		"bugs": "https://github.com/xiaoluoboding/stunning-ui/issues",
+		"description": "💚 Stunning UI is a collection of interactive Tailwind CSS components built for Vue and Nuxt.",
+		"homepage": "https://stunningui.design/",
+		"repository": "https://github.com/xiaoluoboding/stunning-ui",
+		"tags": [
+			"vue",
+			"nuxt",
+			"tailwindcss",
+			"vue3",
+			"shadcn-ui",
+			"magic-ui"
+		]
+	},
+	"categories": [
+		{
+			"name": "composables",
+			"blocks": [
+				{
+					"name": "useConfetti",
+					"directory": "composables",
+					"category": "composables",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"useConfetti.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"canvas-confetti@^1.9.3"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "useConfig",
+					"directory": "composables",
+					"category": "composables",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"useConfig.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": [
+						"defu@^6.1.4"
+					]
+				},
+				{
+					"name": "useDarkmode",
+					"directory": "composables",
+					"category": "composables",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"useDarkmode.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "useScrollspy",
+					"directory": "composables",
+					"category": "composables",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"useScrollspy.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "useSmoothScroll",
+					"directory": "composables",
+					"category": "composables",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"useSmoothScroll.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"gsap@^3.12.5",
+						"lenis@^1.0.45"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "lib",
+			"blocks": [
+				{
+					"name": "tailwind-theme",
+					"directory": "lib",
+					"category": "lib",
+					"tests": false,
+					"subdirectory": false,
+					"list": false,
+					"files": [
+						"tailwind-theme.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"tailwindcss"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "TextSplitter",
+					"directory": "lib",
+					"category": "lib",
+					"tests": false,
+					"subdirectory": false,
+					"list": false,
+					"files": [
+						"TextSplitter.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"lodash-es@^4.17.21",
+						"split-type@^0.3.4"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "utils",
+					"directory": "lib",
+					"category": "lib",
+					"tests": false,
+					"subdirectory": false,
+					"list": false,
+					"files": [
+						"utils.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"clsx@^2.1.1",
+						"tailwind-merge@^2.3.0",
+						"nanoid"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "stunning",
+			"blocks": [
+				{
+					"name": "AnimatedGradientBorder",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"AnimatedGradientBorder.vue"
+					],
+					"localDependencies": [
+						"lib/utils"
+					],
+					"_imports_": {
+						"~/lib/utils": "{{lib/utils}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "AvatarList",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"AvatarList.vue"
+					],
+					"localDependencies": [
+						"lib/utils"
+					],
+					"_imports_": {
+						"~/lib/utils": "{{lib/utils}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "BlurryTextReveal",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"BlurryTextReveal.vue"
+					],
+					"localDependencies": [
+						"lib/TextSplitter"
+					],
+					"_imports_": {
+						"~/lib/TextSplitter": "{{lib/TextSplitter}}"
+					},
+					"dependencies": [
+						"gsap@^3.12.5"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "Dock",
+					"directory": "components/stunning/Dock",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"DockBar.vue",
+						"DockItem.vue"
+					],
+					"localDependencies": [
+						"ui/scroll-area",
+						"ui/tooltip"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"~/components/ui/scroll-area": "{{ui/scroll-area}}",
+						"~/components/ui/tooltip": "{{ui/tooltip}}"
+					}
+				},
+				{
+					"name": "DotPattern",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"DotPattern.vue"
+					],
+					"localDependencies": [
+						"lib/utils"
+					],
+					"_imports_": {
+						"~/lib/utils": "{{lib/utils}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "FlipCard",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"FlipCard.vue"
+					],
+					"localDependencies": [
+						"lib/utils"
+					],
+					"_imports_": {
+						"~/lib/utils": "{{lib/utils}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "GlareLineFrame",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"GlareLineFrame.vue"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "GlassBorderButton",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"GlassBorderButton.vue"
+					],
+					"localDependencies": [
+						"lib/utils",
+						"stunning/ParticlesEffect"
+					],
+					"_imports_": {
+						"~/lib/utils": "{{lib/utils}}",
+						"@/components/stunning/ParticlesEffect/Star.vue": "{{stunning/ParticlesEffect}}/Star.vue"
+					},
+					"dependencies": [
+						"colord@^2.9.3"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "GlowyBorderButton",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"GlowyBorderButton.vue"
+					],
+					"localDependencies": [
+						"lib/utils",
+						"ui/button"
+					],
+					"_imports_": {
+						"~/lib/utils": "{{lib/utils}}",
+						"@/components/ui/button": "{{ui/button}}"
+					},
+					"dependencies": [
+						"colord@^2.9.3"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "GlowyCard",
+					"directory": "components/stunning/GlowyCard",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"GlowyCard.vue",
+						"GlowyCardWrapper.vue"
+					],
+					"localDependencies": [],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {}
+				},
+				{
+					"name": "GlowyDivider",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"GlowyDivider.vue"
+					],
+					"localDependencies": [
+						"lib/utils"
+					],
+					"_imports_": {
+						"~/lib/utils": "{{lib/utils}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "GodRay",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"GodRay.vue"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "GradientBorderButton",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"GradientBorderButton.vue"
+					],
+					"localDependencies": [
+						"lib/utils",
+						"ui/button"
+					],
+					"_imports_": {
+						"~/lib/utils": "{{lib/utils}}",
+						"@/components/ui/button": "{{ui/button}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "GridPattern",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"GridPattern.vue"
+					],
+					"localDependencies": [
+						"lib/utils"
+					],
+					"_imports_": {
+						"~/lib/utils": "{{lib/utils}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "LightBar",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"LightBar.vue"
+					],
+					"localDependencies": [
+						"lib/tailwind-theme"
+					],
+					"_imports_": {
+						"~/lib/tailwind-theme": "{{lib/tailwind-theme}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "MagneticEffect",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"MagneticEffect.vue"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"gsap@^3.12.5"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "Marquee",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Marquee.vue"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "MeteorGrid",
+					"directory": "components/stunning/MeteorGrid",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Meteor.vue",
+						"MeteorGrid.vue"
+					],
+					"localDependencies": [
+						"lib/utils"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"~/lib/utils": "{{lib/utils}}"
+					}
+				},
+				{
+					"name": "MorphingGradient",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"MorphingGradient.vue"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@vueuse/core@^10.11.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "ParticlesEffect",
+					"directory": "components/stunning/ParticlesEffect",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Slim.vue",
+						"Star.vue"
+					],
+					"localDependencies": [],
+					"dependencies": [
+						"@tsparticles/engine@^3.4.0",
+						"@tsparticles/slim@^3.4.0",
+						"@tsparticles/preset-stars@^3.1.0",
+						"@tsparticles/shape-star@^3.4.0"
+					],
+					"devDependencies": [],
+					"_imports_": {}
+				},
+				{
+					"name": "ProgressiveGradientBorder",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"ProgressiveGradientBorder.vue"
+					],
+					"localDependencies": [
+						"lib/utils"
+					],
+					"_imports_": {
+						"~/lib/utils": "{{lib/utils}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "RisingStars",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"RisingStars.vue"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "ScrollReveal",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"ScrollReveal.vue"
+					],
+					"localDependencies": [
+						"composables/useSmoothScroll"
+					],
+					"_imports_": {
+						"@/composables/useSmoothScroll": "{{composables/useSmoothScroll}}"
+					},
+					"dependencies": [
+						"@vueuse/core@^10.11.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "ShimmerText",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"ShimmerText.vue"
+					],
+					"localDependencies": [
+						"lib/utils"
+					],
+					"_imports_": {
+						"~/lib/utils": "{{lib/utils}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "SkewedWrapper",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"SkewedWrapper.vue"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "SpotlightCard",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"SpotlightCard.vue"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@vueuse/core@^10.11.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "StickyStackBlock",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"StickyStackBlock.vue"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "StreamingText",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"StreamingText.vue"
+					],
+					"localDependencies": [
+						"lib/TextSplitter"
+					],
+					"_imports_": {
+						"~/lib/TextSplitter": "{{lib/TextSplitter}}"
+					},
+					"dependencies": [
+						"gsap@^3.12.5"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "TextReveal",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"TextReveal.vue"
+					],
+					"localDependencies": [
+						"lib/TextSplitter"
+					],
+					"_imports_": {
+						"~/lib/TextSplitter": "{{lib/TextSplitter}}"
+					},
+					"dependencies": [
+						"gsap@^3.12.5"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "TorchTextReveal",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"TorchTextReveal.vue"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "TyndallEffect",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"TyndallEffect.vue"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "TypedText",
+					"directory": "components/stunning",
+					"category": "stunning",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"TypedText.vue"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"typed.js@^2.1.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "ui",
+			"blocks": [
+				{
+					"name": "button",
+					"directory": "components/ui/button",
+					"category": "ui",
+					"tests": false,
+					"subdirectory": true,
+					"list": false,
+					"files": [
+						"Button.vue",
+						"index.ts"
+					],
+					"localDependencies": [
+						"lib/utils"
+					],
+					"dependencies": [
+						"radix-vue@^1.8.1",
+						"class-variance-authority@^0.7.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"~/lib/utils": "{{lib/utils}}"
+					}
+				},
+				{
+					"name": "scroll-area",
+					"directory": "components/ui/scroll-area",
+					"category": "ui",
+					"tests": false,
+					"subdirectory": true,
+					"list": false,
+					"files": [
+						"index.ts",
+						"ScrollArea.vue",
+						"ScrollBar.vue"
+					],
+					"localDependencies": [
+						"lib/utils"
+					],
+					"dependencies": [
+						"radix-vue@^1.8.1"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"@/lib/utils": "{{lib/utils}}"
+					}
+				},
+				{
+					"name": "tooltip",
+					"directory": "components/ui/tooltip",
+					"category": "ui",
+					"tests": false,
+					"subdirectory": true,
+					"list": false,
+					"files": [
+						"index.ts",
+						"Tooltip.vue",
+						"TooltipContent.vue",
+						"TooltipProvider.vue",
+						"TooltipTrigger.vue"
+					],
+					"localDependencies": [
+						"lib/utils"
+					],
+					"dependencies": [
+						"radix-vue@^1.8.1"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"@/lib/utils": "{{lib/utils}}"
+					}
+				}
+			]
+		}
+	]
+}

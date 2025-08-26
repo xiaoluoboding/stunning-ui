@@ -13,7 +13,8 @@
     "start": "node .output/server/index.mjs",
     "p:ish": "pnpm install --shamefully-hoist",
     "p:up": "pnpm up",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "build:registry": "jsrepo build"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.213",
@@ -28,6 +29,7 @@
     "@types/splitting": "^1.0.6",
     "@vueuse/nuxt": "^10.9.0",
     "defu": "^6.1.4",
+    "jsrepo": "^1.42.0",
     "nuxt": "^3.11.2",
     "nuxt-icon": "^0.6.10",
     "sass": "^1.77.2",

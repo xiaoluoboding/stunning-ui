@@ -1,0 +1,22 @@
+{
+  "$schema": "https://unpkg.com/jsrepo@1.41.3/schemas/registry-config.json",
+  "meta": {
+    "authors": ["Robert Shaw"],
+    "bugs": "https://github.com/xiaoluoboding/stunning-ui/issues",
+    "repository": "https://github.com/xiaoluoboding/stunning-ui",
+    "description": "💚 Stunning UI is a collection of interactive Tailwind CSS components built for Vue and Nuxt.",
+    "homepage": "https://stunningui.design/",
+    "tags": ["vue", "nuxt", "tailwindcss", "vue3", "shadcn-ui", "magic-ui"]
+  },
+  "dirs": ["./", "./components"],
+  "doNotListBlocks": [],
+  "doNotListCategories": ["lib", "ui"],
+  "listBlocks": [],
+  "listCategories": [],
+  "excludeDeps": ["vue"],
+  "includeBlocks": [],
+  "includeCategories": ["ui", "stunning", "lib", "composables"],
+  "excludeBlocks": ["constants"],
+  "excludeCategories": [],
+  "preview": false
+}
